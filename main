@@ -1,0 +1,45 @@
+#include <iostream>
+#include "gorriti.h"
+#include "precio.h"
+#include "jefe.h"
+#include  "quinta.h"
+#include "departamento.h"
+
+using namespace std;
+
+int main()
+{
+
+   gorriti   objeto_gorriti(1000,"gorriti","552","talar",2,120,50,3);
+
+   precio    objeto_precio(500000,100000);
+
+
+   jefe      objeto_jefe("matias","gomez","35645377","1533153864");
+
+   quinta     objeto_quinta(2000,"liquidambar","2767","talar",2,120,50,3,1,0);
+
+   jefe      objeto_jefe_2("laura","quevedo","35645377","1533153864");
+
+   departamento  objeto_departamento(1000,"gorriti","552","talar",2,120,50,3,"hal",1,1500);
+
+     cout<<"datos del inmueble"<<endl;
+     cout<<objeto_gorriti.mostrar_informacion()<<endl;
+     cout<<endl;
+     cout<<objeto_precio.mostrar_informacion()<<endl;
+     cout<<endl;
+     cout<<"dueio"<<endl;
+     cout<<objeto_jefe.mostrar_informacion()<<endl;
+     cout<<endl;
+    cout<<"quinta"<<endl;
+    cout<<objeto_quinta.mostrar_informacion()<<endl;
+    cout<<endl;
+    cout<<"duenio"<<endl;
+    cout<<objeto_jefe_2.mostrar_informacion()<<endl;
+    cout<<endl;
+    cout<<"departamento"<<endl;
+        cout<<objeto_departamento.mostrar_informacion()<<endl;
+
+
+    return 0;
+}
